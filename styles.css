@@ -1,0 +1,126 @@
+:root {
+    --background-color: #796581;
+  --font-color: #3b4146;
+  --header-background-color: #457497;
+  --header-font-color: #aedfd6;
+  --field-background-color: #4444db;
+  --field-background-color-hover: #7bc2e0;
+  --border-color: rgb(214, 34, 34);
+  --blue-border-color: #375972;
+  --button-background-color: #5b7385;
+  --button-hover-background: #4c6070;
+  --button-active-background: #273138;
+  --font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.6;
+    margin-bottom: 80px;
+}
+
+h1{
+    line-height: 1.2;
+}
+
+button {
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+
+}
+
+
+.header{
+    padding: 20px;
+    border-bottom: 30px solid var(--blue-border-color);
+    background-color: var(--header-background-color);
+    color: var(--header-font-color);
+
+}
+
+.title{
+    font-size: 100px;
+    text-align: center;
+}
+
+
+.main{
+    padding: 0px 20px;
+}
+
+.message {
+    padding: 20px 0;
+    font-size: 50px;
+    text-align: center;
+  }
+  
+  .gameboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 454px;
+    height: 454px;
+    border: 2px solid var(--border-color);
+    margin: 0px auto;
+  }
+  
+  .field {
+    width: 150px;
+    height: 150px;
+    border: 1px solid var(--border-color);
+    background-color: var(--field-background-color);
+    font-size: 100px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .field:hover {
+    background-color: var(--field-background-color-hover);
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  }
+  
+  .restart-btn {
+    padding: 10px 20px;
+    border: 3px solid var(--blue-border-color);
+    border-radius: 7px;
+    background-color: var(--button-background-color);
+    color: var(--header-font-color);
+    font-size: 50px;
+  }
+  
+  .restart-btn:hover {
+    background-color: var(--button-hover-background);
+  }
+  
+  .restart-btn:active {
+    background-color: var(--button-active-background);
+  }
+  
+
+
+
+
